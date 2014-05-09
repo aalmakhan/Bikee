@@ -1,0 +1,22 @@
+<resources>
+    <application name="GreatBikee" >
+        <serviceProfile
+            id="/system/bikee"
+            name="BikeeProvider"
+            role="provider"
+            serviceImpl="com.example.greatbikee.BikeeProviderService"
+            version="1.0" >
+            <supportedTransports>                
+                <transport type="TRANSPORT_WIFI" />
+            </supportedTransports>
+
+            <serviceChannel
+                id="111"
+                dataRate="low"
+                priority="low"
+                reliability="enable" >
+            </serviceChannel>
+        </serviceProfile>
+    </application>
+
+</resources>
